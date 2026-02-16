@@ -6650,20 +6650,17 @@ Back to Top Style
   display: flex;
 }
 
-/* Left Image */
 .ue-modal-left {
   width: 55%;
   background: url("../img/sgi/img1.webp") center/cover no-repeat;
 }
 
-/* Right Form */
 .ue-modal-right {
   width: 45%;
   padding: 20px;
   background: #fff;
 }
 
-/* Header */
 .ue-form-header {
   display: flex;
   justify-content: space-between;
@@ -6686,5 +6683,63 @@ Back to Top Style
   }
 }
 
+.ue-result-card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.ue-result-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.ue-result-img img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content */
+.ue-result-content {
+  padding: 20px;
+  text-align: center;
+  background: #f8faff;
+}
+
+.ue-result-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #0b1c3d;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.ue-result-link i {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.ue-result-link:hover {
+  color: #1a56db;
+}
+
+.ue-result-link:hover i {
+  transform: translateX(6px);
+}
+
+@media (max-width: 768px) {
+  .ue-result-img img {
+    height: 200px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
