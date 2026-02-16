@@ -6537,55 +6537,13 @@ Back to Top Style
   }
 }
 
-/* Modal Overlay */
-.ue-modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(3, 12, 35, 0.85);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 99999;
-}
 
-/* Modal Box */
-.ue-modal-box {
-  width: 720px;
-  background: #0b1c3d;
-  border-radius: 12px;
-  overflow: hidden;
-  animation: ueFadeIn 0.4s ease;
-}
 
 /* Content Layout */
 .ue-modal-content {
   display: flex;
 }
 
-/* Left Image */
-.ue-modal-left {
-  width: 65%;
-  background: url("../img/sgi/img1.webp") center/cover no-repeat;
-  position: relative;
-}
-
-.ue-modal-right {
-  width: 55%;
-  padding: 30px;
-  background: #ffffff;
-}
-
-/* Close Button */
-.ue-modal-close {
-  position: absolute;
-  top: 10px;
-  right: 14px;
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 26px;
-  cursor: pointer;
-}
 
 @keyframes ueFadeIn {
   from {
@@ -6599,12 +6557,122 @@ Back to Top Style
   }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .ue-modal-box {
-    width: 95%;
-  }
+.ue-college-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
 
+/* Label */
+.ue-college-label {
+  font-weight: 600;
+  color: #0b1c3d;
+}
+
+/* College Link */
+.ue-college-link {
+  color: #FFC333;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+}
+
+.ue-college-link:hover::after {
+  width: 100%;
+}
+
+/* Mobile Friendly */
+@media (max-width: 576px) {
+  .ue-college-info {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+}
+
+.ue-college-badge {
+  background: #FFC333;
+  color: #1a56db !important;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.second-college-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+/* Label */
+.second-college-label {
+  font-weight: 600;
+  color: #0b1c3d;
+}
+
+/* College Link */
+.second-college-link {
+  color: #0b365f;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+}
+
+.second-college-link:hover::after {
+  width: 100%;
+}
+
+/* Mobile Friendly */
+@media (max-width: 576px) {
+  .second-college-info {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+}
+
+.second-college-badge {
+  background: #0b365f;
+  color: #FFC333 !important;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.ue-modal-box {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ue-modal-content {
+  display: flex;
+}
+
+/* Left Image */
+.ue-modal-left {
+  width: 55%;
+  background: url("../img/sgi/img1.webp") center/cover no-repeat;
+}
+
+/* Right Form */
+.ue-modal-right {
+  width: 45%;
+  padding: 20px;
+  background: #fff;
+}
+
+/* Header */
+.ue-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
   .ue-modal-content {
     flex-direction: column;
   }

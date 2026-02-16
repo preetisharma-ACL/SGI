@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
 
-        <link href="assets/img/sgi/sgi-logo.webp" type="image/x-icon"
+        <link href="assets/img/sgi/fav-icon.png" type="image/x-icon"
             rel="icon">
     </head>
 
@@ -64,7 +64,10 @@
                                         </li>
                                         <li class="d-inline-block">
                                             <a class="text-decoration-none"
-                                                href="#">Apply Now</a>
+                                                href="modal"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#ueAdmissionModal">Apply
+                                                Now</a>
                                         </li>
                                         <li class="d-inline-block">
                                             <a class="text-decoration-none"
@@ -245,13 +248,15 @@
                     </p>
 
                     <div class="ue-hero-buttons">
-                        <a href="#" class="ue-btn ue-btn-primary">
-                            EXPLORE PROGRAMS
+                        <a href="colleges.html" class="ue-btn ue-btn-primary">
+                            Explore Institutions
                             <i class="flaticon-right-arrow"></i>
                         </a>
 
-                        <a href="#" class="ue-btn ue-btn-outline">
-                            APPLY NOW
+                        <a href="modal" data-bs-toggle="modal"
+                            data-bs-target="#ueAdmissionModal"
+                            class="ue-btn ue-btn-outline">
+                            Apply Now
                             <i class="flaticon-right-arrow"></i>
                         </a>
                     </div>
@@ -282,8 +287,8 @@
 
                             <!-- Course Level -->
                             <div class="mb-3">
-                                <select class="form-select ue-input"
-                                    id="courseLevel">
+                                <select class="form-select ue-input
+                                    courseLevel">
                                     <option value>Select Course Level</option>
                                     <option value="polytechnic">Polytechnic
                                         Diploma</option>
@@ -297,15 +302,15 @@
                             </div>
                             <!-- Program -->
                             <div class="mb-3">
-                                <select class="form-select ue-input"
-                                    id="program">
+                                <select class="form-select ue-input
+                                    program">
                                     <option value>Select Program</option>
                                 </select>
                             </div>
                             <!-- College -->
                             <div class="mb-3">
-                                <select class="form-select ue-input"
-                                    id="college">
+                                <select class="form-select ue-input
+                                    college">
                                     <option value>Select College</option>
                                 </select>
                             </div>
@@ -551,6 +556,14 @@
                                     </a>
                                 </li>
                             </ul>
+                            <div class="ue-college-info">
+                                <span class="ue-college-badge">College
+                                    Available:</span>
+                                <a href="https://psspckm.com/"
+                                    class="ue-college-link">
+                                    Prateek Singh Siddharth Polytechnic College
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
@@ -559,9 +572,7 @@
                                 <i class="flaticon-mortarboard"></i>
                                 Graduate Programs
                             </h3>
-                            <p>Graduate programs are advanced academic programs
-                                that allow students to further specialize in a
-                                specific field.</p>
+                            <p>Graduate programs Available.</p>
                             <ul class="list-unstyled ps-0 mb-0 list">
                                 <li>
                                     <a
@@ -612,6 +623,15 @@
                                     </a>
                                 </li>
                             </ul>
+                            <div class="second-college-info">
+                                <span class="second-college-badge">College
+                                    Available:</span>
+                                <a href="https://ssaps.in/"
+                                    class="second-college-link">
+                                    Siddharth Shikshan Evam Prashikshan Sansthan
+                                    (SSAPS)
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
@@ -646,13 +666,332 @@
                                     </a>
                                 </li>
                             </ul>
-
+                            <div class="ue-college-info">
+                                <span class="ue-college-badge">College
+                                    Available:</span>
+                                <a href="https://dssoppharmacycollege.in/"
+                                    class="ue-college-link">
+                                    DSSOP Pharmacy College
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- End Graduates Area -->
+
+        <!-- college area start -->
+        <div class="college-area p-20" style="background-color:#faf7f2;">
+            <div class="container-fluid py-5 px-30">
+                <div class="row">
+                    <!-- LEFT SIDE: COLLEGE LIST -->
+                    <div class="col-lg-3">
+                        <div class="college-list">
+                            <h5 class="mb-3">Our Institutions</h5>
+                            <a href="#college1 " class="active">Siddharth Public
+                                School</a>
+                            <a href="#college2">Siddharth Law College</a>
+                            <a href="#college3">DSSOP Pharmacy College</a>
+                            <a href="#college4">Prateek Singh Institute of
+                                Nursing & Paramedical sciences</a>
+                            <a href="#college5">Siddharth Shikshan Avam
+                                Prashikshan Sansthan (SSAPS)</a>
+                            <a href="#college6">Prateek Singh Siddharth
+                                Polytechnic, Karaunda-Masina</a>
+                            <a href="#college7">Siddharth Public School</a>
+                        </div>
+                    </div>
+                    <!-- RIGHT SIDE: COLLEGE CARDS -->
+                    <div class="col-lg-9">
+                        <!-- College 1 -->
+                        <div id="college1" class="college-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <h4>Siddharth Public School</h4>
+                                    <p>
+                                        Building Strong Foundations for
+                                        Lifelong
+                                        Learning
+                                    </p>
+                                    <ul class="feature-list">
+                                        <li>
+                                            <i
+                                                class="fas fa-check-circle "></i>
+                                            CBSE-affiliated school fostering
+                                            holistic development.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle "></i>
+                                            Inclusive and nurturing environment
+                                            with modern teaching methodologies.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle "></i>
+                                            Focus on academic excellence,
+                                            leadership, and co-curricular
+                                            activities.
+                                        </li>
+
+                                    </ul>
+                                    <a href="https://siddharthpublicschool.com/"
+                                        class="btn btn-clg btn-sm">Visit
+                                        Website
+                                    </a>
+                                </div>
+                                <div class="col-md-5">
+                                    <img
+                                        src="assets/img/sgi/sd1-1024x472.webp"
+                                        alt>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- College 2 -->
+                        <div id="college2" class="college-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <h4>Siddharth Law College</h4>
+                                    <p>
+                                        Shaping the Future of Legal Education
+                                    </p>
+                                    <ul class="feature-list">
+                                        <li>
+                                            <i
+                                                class="fas fa-check-circle"></i>
+                                            Comprehensive BA LLB and LLB
+                                            programs with industry-relevant
+                                            curriculum.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle "></i>
+                                            Expert faculty, moot court sessions,
+                                            and hands-on legal training.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle "></i>
+                                            Strong industry connections for
+                                            legal internships and placements.
+                                        </li>
+                                    </ul>
+                                    <a href="https://siddharthlawcollege.in/"
+                                        class="btn btn-clg btn-sm">Visit
+                                        Website
+                                    </a>
+                                </div>
+                                <div class="col-md-5">
+                                    <img
+                                        src="assets/img/sgi/sl4-1024x473.webp"
+                                        alt>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- College 3 -->
+                        <div id="college3" class="college-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <h4>DSSOP Pharmacy College</h4>
+                                    <p>
+                                        Advancing Pharmaceutical Science &
+                                        Healthcare
+                                    </p>
+                                    <ul class="feature-list">
+                                        <li>
+                                            <i
+                                                class="fas fa-check-circle"></i>
+                                            Leading pharmacy college offering D.
+                                            Pharma and B. Pharma programs.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle "></i>
+                                            State-of-the-art labs, experienced
+                                            faculty, and practical exposure.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle "></i>
+                                            Commitment to innovation in
+                                            pharmaceutical research and
+                                            healthcare solutions.
+                                        </li>
+                                    </ul>
+                                    <a href="https://dssoppharmacycollege.in/"
+                                        class="btn btn-clg btn-sm">Visit
+                                        Website
+                                    </a>
+                                </div>
+                                <div class="col-md-5">
+                                    <img
+                                        src="assets/img/sgi/dssop-1024x474.webp"
+                                        alt>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- College 4 -->
+                        <div id="college4" class="college-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <h4>Prateek Singh Institute of Nursing &
+                                        Paramedical sciences</h4>
+                                    <p>
+                                        Excellence in Education, Excellence in
+                                        Character
+                                    </p>
+                                    <ul class="feature-list">
+                                        <li>
+                                            <i
+                                                class="fas fa-check-circle"></i>
+                                            Nurturing young minds with a strong
+                                            academic foundation.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle "></i>
+                                            Activity-based learning, modern
+                                            pedagogy, and digital classrooms.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle "></i>
+                                            Focus on discipline, creativity, and
+                                            personality development.
+                                        </li>
+                                    </ul>
+                                    <a href="https://psinps.in/"
+                                        class="btn btn-clg btn-sm">Visit
+                                        Website
+                                    </a>
+                                </div>
+                                <div class="col-md-5">
+                                    <img
+                                        src="assets/img/sgi/ps2-e1740981091238-1024x472.webp"
+                                        alt>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- College 5 -->
+                        <div id="college5" class="college-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <h4>Siddharth Shikshan Avam Prashikshan
+                                        Sansthan (SSAPS)</h4>
+                                    <p>
+                                        Bridging Academics with Professional
+                                        Excellence
+                                    </p>
+                                    <ul class="feature-list">
+                                        <li>
+                                            <i
+                                                class="fas fa-check-circle"></i>
+                                            Specialised professional courses for
+                                            career advancement.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle "></i>
+                                            Industry-oriented programs with
+                                            practical exposure.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle "></i>
+                                            Focus on skill development,
+                                            leadership, and employability.
+                                        </li>
+                                    </ul>
+                                    <a href="https://ssaps.in/"
+                                        class="btn btn-clg btn-sm">Visit
+                                        Website
+                                    </a>
+                                </div>
+                                <div class="col-md-5">
+                                    <img
+                                        src="assets/img/sgi/ss2.webp"
+                                        alt>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- College 6 -->
+                        <div id="college6" class="college-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <h4>Prateek Singh Siddharth Polytechnic,
+                                        Karaunda-Masina</h4>
+                                    <p>
+                                        Empowering Technical Education for a
+                                        Brighter Future
+                                    </p>
+                                    <ul class="feature-list">
+                                        <li>
+                                            <i
+                                                class="fas fa-check-circle"></i>
+                                            Comprehensive diploma programs in
+                                            engineering and technology.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle "></i>
+                                            Industry-aligned curriculum with
+                                            hands-on training.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle "></i>
+                                            Modern infrastructure and
+                                            experienced faculty for holistic
+                                            learning
+                                        </li>
+                                    </ul>
+                                    <a href="https://psspckm.com/"
+                                        class="btn btn-clg btn-sm">Visit
+                                        Website
+                                    </a>
+                                </div>
+                                <div class="col-md-5">
+                                    <img
+                                        src="assets/img/sgi/clg.webp"
+                                        alt>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- College 7 -->
+                        <div id="college7" class="college-card">
+                            <div class="row align-items-center">
+                                <div class="col-md-7">
+                                    <h4>
+                                        Siddharth Public School</h4>
+                                    <p>
+                                        Building Strong Foundations for Lifelong
+                                        Learning
+                                    </p>
+                                    <ul class="feature-list">
+                                        <li>
+                                            <i
+                                                class="fas fa-check-circle"></i>
+                                            CBSE-affiliated school fostering
+                                            holistic development.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle "></i>
+                                            Inclusive and nurturing environment
+                                            with modern teaching methodologies.
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-check-circle "></i>
+                                            Focus on academic excellence,
+                                            leadership, and co-curricular
+                                            activities.
+                                        </li>
+                                    </ul>
+                                    <a href="#"
+                                        class="btn btn-clg btn-sm">Visit
+                                        Website
+                                    </a>
+                                </div>
+                                <div class="col-md-5">
+                                    <img
+                                        src="https://siddharthpublicschool.in/"
+                                        alt>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- college area end -->
 
         <!-- Start Admission Area -->
         <div class="admission-area pt-100 pb-75">
@@ -685,7 +1024,8 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="admission-btn d-flex justify-content-end">
                             <a class="text-decoration-none default-btn"
-                                href="#">
+                                href="modal" data-bs-toggle="modal"
+                                data-bs-target="#ueAdmissionModal">
                                 APPLY NOW
                                 <i class="flaticon-right-arrow"></i>
                             </a>
@@ -733,9 +1073,6 @@
                             <ul class="list-unstyled">
                                 <li><a
                                         href="about.html">About</a></li>
-                                <li><a
-                                        href="team.html">Team
-                                        Overview</a></li>
                                 <li><a href="colleges.html">Our
                                         Institutions
                                     </a></li>
@@ -752,14 +1089,26 @@
                         <div class="single-footer-widget">
                             <h3>Our Institutions</h3>
                             <ul class="list-unstyled">
-                                <li><a href="#">Siddharth Public School</a></li>
-                                <li><a href="#">Siddharth Law College</a></li>
-                                <li><a href="#">DSSOP Pharmacy College</a></li>
-                                <li><a href="#">Prateek Singh Institute of
+                                <li><a
+                                        href="https://siddharthpublicschool.com/">Siddharth
+                                        Public School</a></li>
+                                <li><a
+                                        href="https://siddharthlawcollege.in/">Siddharth
+                                        Law College</a></li>
+                                <li><a
+                                        href="https://dssoppharmacycollege.in/">DSSOP
+                                        Pharmacy College</a></li>
+                                <li><a href="https://psinps.in/">Prateek Singh
+                                        Institute of
                                         Nursing & Paramedical sciences</a></li>
-                                <li><a href="#">
+                                <li><a href="https://ssaps.in/">
                                         Siddharth Shikshan Avam Prashikshan
                                         Sansthan (SSAPS)</a></li>
+                                <li><a href="https://psspckm.com/">
+                                        Prateek Singh Siddharth Polytechnic,
+                                        Karaunda-Masina</a></li>
+                                <li><a href="https://siddharthpublicschool.in/">
+                                        Siddharth Public School</a></li>
                             </ul>
                         </div>
                     </div>
@@ -799,76 +1148,95 @@
         <!-- End Footer Area -->
 
         <!-- Admission Modal -->
-        <div class="ue-modal-overlay" id="ueAdmissionModal">
-            <div class="ue-modal-box">
+        <div class="modal fade" id="ueAdmissionModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content ue-modal-box">
 
-                <!-- Close Button -->
-                <button class="ue-modal-close"
-                    onclick="closeUEModal()">×</button>
+                    <!-- Modal Body -->
+                    <div class="modal-body p-0">
 
-                <div class="ue-modal-content">
-                    <!-- Left Image Section -->
-                    <div class="ue-modal-left"></div>
+                        <!-- YOUR EXACT FORM START -->
+                        <div class="ue-modal-content">
 
-                    <!-- Right Form Section -->
-                    <div class="ue-modal-right">
-                        <h4 class="ue-form-title">
-                            Join the Legacy-Admissions Open!
-                        </h4>
+                            <!-- Left Image Section -->
+                            <div class="ue-modal-left"></div>
 
-                        <form>
-                            <div class="mb-2">
-                                <input type="text" class="form-control ue-input"
-                                    placeholder="Full Name">
+                            <!-- Right Form Section -->
+                            <div class="ue-modal-right">
+
+                                <div class="ue-form-header">
+                                    <h4 class="ue-form-title mb-0">
+                                        Join the Legacy-Admissions Open!
+                                    </h4>
+
+                                    <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="modal">
+                                    </button>
+                                </div>
+
+                                <form>
+                                    <div class="mb-2">
+                                        <input type="text"
+                                            class="form-control ue-input"
+                                            placeholder="Full Name">
+                                    </div>
+
+                                    <div class="mb-2">
+                                        <input type="tel"
+                                            class="form-control ue-input"
+                                            placeholder="Phone Number">
+                                    </div>
+
+                                    <div class="mb-2">
+                                        <input type="email"
+                                            class="form-control ue-input"
+                                            placeholder="Email Address">
+                                    </div>
+
+                                    <div class="mb-2">
+                                        <select
+                                            class="form-select ue-input courseLevel">
+                                            <option value>Select Course
+                                                Level</option>
+                                            <option
+                                                value="polytechnic">Polytechnic
+                                                Diploma</option>
+                                            <option value="nursing">Nursing
+                                                Program</option>
+                                            <option value="pharmacy">Pharmacy
+                                                Program</option>
+                                            <option value="bachelor">Bachelor
+                                                Degree Program</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-2">
+                                        <select
+                                            class="form-select ue-input program">
+                                            <option value>Select
+                                                Program</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <select
+                                            class="form-select ue-input college">
+                                            <option value>Select
+                                                College</option>
+                                        </select>
+                                    </div>
+
+                                    <button type="submit"
+                                        class="btn ue-submit-btn w-100">
+                                        Submit Enquiry
+                                    </button>
+                                </form>
                             </div>
-
-                            <div class="mb-2">
-                                <input type="tel" class="form-control ue-input"
-                                    placeholder="Phone Number">
-                            </div>
-
-                            <div class="mb-2">
-                                <input type="email"
-                                    class="form-control ue-input"
-                                    placeholder="Email Address">
-                            </div>
-
-                            <div class="mb-2">
-                                <select class="form-select ue-input"
-                                    id="courseLevel">
-                                    <option value>Select Course Level</option>
-                                    <option value="polytechnic">Polytechnic
-                                        Diploma</option>
-                                    <option value="nursing">Nursing
-                                        Program</option>
-                                    <option value="pharmacy">Pharmacy
-                                        Program</option>
-                                    <option value="bachelor">Bachelor Degree
-                                        Program</option>
-                                </select>
-                            </div>
-
-                            <div class="mb-2">
-                                <select class="form-select ue-input"
-                                    id="program">
-                                    <option value>Select Program</option>
-                                </select>
-                            </div>
-
-                            <div class="mb-3">
-                                <select class="form-select ue-input"
-                                    id="college">
-                                    <option value>Select College</option>
-                                </select>
-                            </div>
-
-                            <button type="submit"
-                                class="btn ue-submit-btn w-100">
-                                Submit Enquiry
-                            </button>
-                        </form>
+                        </div>
+                        <!-- YOUR EXACT FORM END -->
                     </div>
-
                 </div>
             </div>
         </div>
@@ -893,102 +1261,100 @@
             data-cf-beacon='{"version":"2024.11.0","token":"5fe684bbe2954c839d4575e6915100ba","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
             crossorigin="anonymous"></script>
         <script>
-document.addEventListener("DOMContentLoaded", function () {
+        document.addEventListener("DOMContentLoaded", function () {
+            const forms = document.querySelectorAll("form");
+            forms.forEach(form => {
+                const courseLevel = form.querySelector(".courseLevel");
+                const program = form.querySelector(".program");
+                const college = form.querySelector(".college");
 
-    const courseLevel = document.getElementById("courseLevel");
-    const program = document.getElementById("program");
-    const college = document.getElementById("college");
+                if (!courseLevel) return;
 
-    if (!courseLevel) return; // safety check
+                courseLevel.addEventListener("change", function () {
 
-    courseLevel.addEventListener("change", function () {
+                    program.innerHTML = '<option value="">Select Program</option>';
+                    college.innerHTML = '<option value="">Select College</option>';
+                    college.disabled = false;
 
-        program.innerHTML = '<option value="">Select Program</option>';
-        college.innerHTML = '<option value="">Select College</option>';
-        college.disabled = false;
+                    if (this.value === "polytechnic") {
 
-        /* POLYTECHNIC */
-        if (this.value === "polytechnic") {
-            program.innerHTML += `
-                <option>Civil Engineering</option>
-                <option>Electrical Engineering</option>
-                <option>Mechanical (Automobile)</option>
-                <option>Mechanical (Production)</option>
-                <option>Computer Science & Engineering</option>
-            `;
+                        program.innerHTML += `
+                    <option>Civil Engineering</option>
+                    <option>Electrical Engineering</option>
+                    <option>Mechanical (Automobile)</option>
+                    <option>Mechanical (Production)</option>
+                    <option>Computer Science & Engineering</option>
+                `;
 
-            college.innerHTML = `
-                <option selected>
-                    Prateek Singh Siddharth Polytechnic College
-                </option>
-            `;
-            college.disabled = true;
-        }
+                        college.innerHTML = `
+                    <option selected>
+                        Prateek Singh Siddharth Polytechnic College
+                    </option>
+                `;
+                        college.disabled = true;
+                    }
 
-        /* NURSING */
-        else if (this.value === "nursing") {
-            program.innerHTML += `
-                <option>ANM</option>
-                <option>GNM</option>
-                <option>BSc Nursing</option>
-                <option>Diploma in X-Ray Technician</option>
-                <option>Diploma in OT Technician</option>
-                <option>Diploma in Hospital & Domiciliary Care Assistant</option>
-            `;
+                    else if (this.value === "nursing") {
 
-            college.innerHTML = `
-                <option selected>PSINPS Nursing College</option>
-            `;
-            college.disabled = true;
-        }
+                        program.innerHTML += `
+                    <option>ANM</option>
+                    <option>GNM</option>
+                    <option>BSc Nursing</option>
+                    <option>Diploma in X-Ray Technician</option>
+                    <option>Diploma in OT Technician</option>
+                    <option>Diploma in Hospital & Domiciliary Care Assistant</option>
+                `;
 
-        /* BACHELOR */
-        else if (this.value === "bachelor") {
-            program.innerHTML += `
-                <option>BBA</option>
-                <option>BA</option>
-                <option>B.Ed</option>
-                <option>BCA</option>
-                <option>D.El.Ed</option>
-                <option>B.Com</option>
-            `;
+                        college.innerHTML = `
+                    <option selected>PSINPS Nursing College</option>
+                `;
+                        college.disabled = true;
+                    }
 
-            college.innerHTML = `
-                <option selected>Siddharth Shikshan Evam Prashikshan Sansthan (SSAPS)</option>
-                <option>Siddharth Group Of Institutions</option>
-            `;
-            college.disabled = false;
-        }
+                    else if (this.value === "bachelor") {
 
-        /* PHARMACY */
-        else if (this.value === "pharmacy") {
-            program.innerHTML += `
-                <option>B.Pharm (4 Years)</option>
-                <option>D.Pharm (2 Years)</option>
-            `;
+                        program.innerHTML += `
+                    <option>BBA</option>
+                    <option>BA</option>
+                    <option>B.Ed</option>
+                    <option>BCA</option>
+                    <option>D.El.Ed</option>
+                    <option>B.Com</option>
+                `;
 
-            college.innerHTML = `
-                <option selected>DSSOP Pharmacy College</option>
-            `;
-            college.disabled = true;
-        }
-    });
+                        college.innerHTML = `
+                    <option selected>Siddharth Shikshan Evam Prashikshan Sansthan (SSAPS)</option>
+                    <option>Siddharth Group Of Institutions</option>
+                `;
+                        college.disabled = false;
+                    }
 
+                    else if (this.value === "pharmacy") {
+
+                        program.innerHTML += `
+                    <option>B.Pharm (4 Years)</option>
+                    <option>D.Pharm (2 Years)</option>
+                `;
+
+                        college.innerHTML = `
+                    <option selected>DSSOP Pharmacy College</option>
+                `;
+                        college.disabled = true;
+                    }
+
+                });
+
+            });
+
+        });
+       document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    const modalElement = document.getElementById("ueAdmissionModal");
+    const admissionModal = new bootstrap.Modal(modalElement);
+    admissionModal.show();
+  }, 3000); // 3000ms = 3 seconds
 });
-</script>
-
-        <script>
-    window.addEventListener("load", function () {
-        setTimeout(function () {
-            document.getElementById("ueAdmissionModal").style.display = "flex";
-        }, 3000);
-    });
-
-    function closeUEModal() {
-        document.getElementById("ueAdmissionModal").style.display = "none";
-    }
-</script>
+    </script>
 
     </body>
-
 </html>
